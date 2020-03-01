@@ -1,0 +1,14 @@
+.header {
+    height: 60px;
+    background: rgb(241, 241, 241);
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+    &__title {
+        font-family: "Nothing You Could Do";
+        color: #5c3e05d9;
+        font-size: 25px;
+    }
+}
