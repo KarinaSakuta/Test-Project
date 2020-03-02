@@ -61,7 +61,7 @@ export default class LoginPage extends Component {
                                 Пароль:
                                 <input type="password" name="password" required className="login__form-input" value={this.state.password} onChange={this.handleInputChange} />
                             </label>
-                            <input type="submit" value="Войти" className="login__form-submit" />
+                            <input type="submit" value="→   Войти" className="login__form-submit" />
                         </form>
                         <Link className="login__link" to="/">Вернуться на главную</Link>
                     </div>
