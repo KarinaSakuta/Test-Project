@@ -51,6 +51,7 @@ export default class LoginPage extends Component {
             <div className="page page_login">
                 <div className="page__content">
                     <div className="login">
+                        <h1 className="login__title">Karina's cats list</h1>
                         <form className="login__form" onSubmit={this.onFormSubmit}>
                             <label className="login__form-label">
                                 Логин:

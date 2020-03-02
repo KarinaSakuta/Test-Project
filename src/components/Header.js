@@ -41,10 +41,9 @@ class Header extends Component {
         return (
             <header className="header">
                 <div className="header__container">
-                    <h1 className="header__title">Karina cats list</h1>
-                    <Link className="header__link" to="/">Главная</Link>
+                <Link className="header__title" to="/">Karina's cats list</Link>
+                    {this.renderButton()}
                 </div>
-                {this.renderButton()}
             </header>
         );
     }

@@ -1,4 +1,7 @@
 .login {
+    background: white;
+    border-radius: 25px;
+    padding: 20px 60px;
     &__form {
         display: flex;
         flex-direction: column;
@@ -7,5 +10,42 @@
     }
     &__form-input {
         width: 100%;
+        margin: 15px 0 30px;
+        display: block;
+        border: 1px solid #aaa;
+        border-radius: 15px;
+        outline: none;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    &__form-submit {
+        margin: 0 auto 50px;
+        display: block;
+        padding: 5px 40px;
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 15px;
+        outline: none;
+        font-size: 15px;
+        transition: height .2s ease-out, width .2s ease-out;
+        &:hover {
+            background-color: #ededed;
+        }
+    }
+    &__link {
+        width: 100%;
+        text-align: center;
+        display: block;
+        color: #595959;
+        font-size: 20px;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-family: "Nothing You Could Do", cursive;
+        color: #5c3e05d9;
+        font-size: 30px;
+        -webkit-user-select: none;
+        user-select: none;
+        text-decoration: none;
     }
 }

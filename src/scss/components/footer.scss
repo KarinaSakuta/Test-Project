@@ -1,4 +1,18 @@
 .footer {
-    height: 200px;
+    padding: 20px;
+    height: 60px;
     background: salmon;
+    &__text {
+        display: inherit;
+        text-align: right;
+        font-family: "Nothing You Could Do", cursive;
+        color: #5c3e05d9;
+        font-size: 30px;
+        -webkit-user-select: none;
+        user-select: none;
+        text-decoration: none;
+        @include tablet {
+            font-size: 20px;
+        }
+    }
 }

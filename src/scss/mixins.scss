@@ -1,18 +1,12 @@
 $mobile-min-width: 320px;
-$mobile-max-width: 767px;
-$tablet-min-width: 768px;
-$tablet-max-width: 1024px;
-$desktop-min-width: 1025px;
-$desktop-max-width: 1345px;
-
-@mixin mobile {
-  @media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-    @content;
-  }
-}
+// $mobile-max-width: 767px;
+$tablet-min-width: 889px;
+$tablet-max-width: 1049px;
+$desktop-min-width: 890px;
+$desktop-max-width: 1165px;
 
 @mixin tablet {
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  @media (min-width: $mobile-min-width) and (max-width: $tablet-min-width) {
     @content;
   }
 }

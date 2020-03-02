@@ -28,9 +28,28 @@ export default class ListPage extends Component {
                <li className="list__item">
                    <Link className="list__item-link" to={`/details/${index}`} key={index}>
                        <h3 className="list__item-title">{element.name}</h3>
-                       <div className="list__item-image-container">
-                           <img className="list__item-image" src={element.imageUrl} alt={element.name}/>
-                       </div>
+                       <div className="list__item-container">
+                            <div className="list__item-image-container">
+                                <img className="list__item-image" src={element.imageUrl} alt={element.name}/>
+                            </div>
+                            <div className="list__item-text-container">
+                                <div className="list__item-text-container-inner">                                
+                                    <div className="list__item-text">
+                                        <span className="list__item-text-title">Страна:</span>
+                                        <span className="list__item-text-value">{element.originCountry}</span>
+                                    </div>
+                                    <div className="list__item-text">
+                                        <span className="list__item-text-title">Выведено:</span>
+                                        <span className="list__item-text-value">{element.foundationDate}</span>
+                                    </div>
+                                    <div className="list__item-text">
+                                        <span className="list__item-text-title">Категория WCF:</span>
+                                        <span className="list__item-text-value">{element.wcfCategory}</span>
+                                    </div>
+                                </div>
+                                <button className="list__item-button">Подробнее...</button>
+                            </div>
+                        </div>
                    </Link>
                 </li>
             );
@@ -46,8 +65,8 @@ export default class ListPage extends Component {
             <div className="page">
                 <Header/>
                 <div className="page__content">
+                    <h2 className="page__content-header">Список котиков Каринки</h2>
                     <div className="list">
-                        <h2 className="list__title">Список котиков Карины</h2>
                         <ul className="list__container">
                             {this.renderListItems()}
                         </ul>

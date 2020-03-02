@@ -7,16 +7,13 @@
         display: flex;
         flex-direction: column;
     }
-    &__title {
-        font-size: 25px;
-        text-align: center;
-        color: #c3c3c3;
-        line-height: 2;
-    }
     &__item {
+        min-height: 400px;
         background-color: #ffffff;
         border-radius: 30px;
         padding: 20px;
+        border: 2px solid transparent;
+        transition: border-color .3s ease-out;
 
         &:not(:first-child) {
             margin-top: 20px;
@@ -24,15 +21,72 @@
         &:not(:last-child) {
             margin-bottom: 20px;
         }
+        &:hover {
+            box-shadow: 0 0 15px 1px rgba(0,0,0,.5);
+        }
+    }
+    &__item-title {
+        margin-bottom: 15px;
+    }
+    &__item-container {
+        display: flex;
+        flex-direction: row;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item-image-container {
         position: relative;
         height: 300px;
         width: 300px;
+        border-radius: 50%;
         overflow: hidden;
     }
     &__item-image {
         @include absolute-transform-centering;
         height: 100%;
+    }
+    &__item-link {
+        font-family: 'Bad Script', cursive;
+        text-decoration: none;
+        font-size: 26px;
+        color: #514133;
+
+        @include tablet {
+            font-size: 14px;
+        }
+        &:hover {
+            transition: .3s ease-out;
+        }
+    }
+    &__item-text-container {
+        line-height: 1.4;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    &__item-text-container-inner {
+        flex: 1;
+    }
+    &__item-text {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    &__item-text-title {
+        margin-right: 8px;
+    }
+    &__item-button {
+        padding: 5px 40px;
+        font-family: inherit;
+        font-size: 24px;
+        color: #464141;
+        background: transparent;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
     }
 }

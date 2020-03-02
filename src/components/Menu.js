@@ -7,8 +7,15 @@ export default class Menu extends Component {
     renderLinks() {
         const menuItems = this.props.items;
         const activeId = this.props.activeId;
+        const sortedMenuItems = [...menuItems].sort((element1) => {
+            if (element1.id === activeId) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
 
-        return menuItems.map((element) => {
+        return sortedMenuItems.map((element) => {
             const elementClasses = classnames('menu__item', {
                 'menu__item_active': element.id === activeId,
             });
@@ -16,14 +23,16 @@ export default class Menu extends Component {
             return (
                 <li className={elementClasses}>
                     <Link className="menu__item-link" to={`/details/${element.id}`}>
-                        <img className="menu__item-img" alt={element.title} src={element.imageUrl} />
+                        <div className="menu__item-img-container">
+                            <img className="menu__item-img" alt={element.title} src={element.imageUrl} />
+                        </div>
                         <span className="menu__item-title">{element.title}</span>
                     </Link>
                 </li>
             );
         })
     }
-    
+
     render() {
         return (
             <nav className="menu">

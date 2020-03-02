@@ -7,16 +7,44 @@
         flex-direction: row;
     }
 
+    &__back-link {
+        color: #fbfbfb;
+        font-size: 20px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        &::before {
+            content: "↩ ";
+        }
+    }
     &__content {
         display: flex;
+        flex-direction: column;
+        position: relative;
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0 15px 70px;
 
         .page_login & {
             justify-content: center;
             align-items: center;
         }
+        .page_details & {
+            @include desktop {
+                padding-right: 140px;
+            }
+            @include tablet {
+                padding-right: 200px;
+            }
+        }
+    }
+    &__content-header {
+        margin: 35px 0;
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+        text-align: center;
+        color: #fbfbfb;
+        line-height: 2;
     }
 }
