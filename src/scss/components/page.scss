@@ -26,6 +26,9 @@
         margin: 0 auto;
         padding: 0 15px 70px;
 
+        @include tablet {
+            padding: 0 5px 70px;
+        }
         .page_login & {
             justify-content: center;
             align-items: center;
@@ -35,7 +38,7 @@
                 padding-left: 140px;
             }
             @include tablet {
-                padding-left: 140px;
+                padding-left: 110px;
             }
         }
     }

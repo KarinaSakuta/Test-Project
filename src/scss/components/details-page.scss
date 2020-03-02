@@ -7,6 +7,9 @@
     padding: 20px;
     border: 2px solid transparent;
 
+    @include tablet {
+        padding: 5px;
+    }
     &__preview {
         display: flex;
         flex-direction: row;
@@ -17,6 +20,9 @@
             flex-direction: column;
             font-size: 19px;
         }
+    }
+    &__preview-text-value {
+        word-wrap: break-word;
     }
     &__preview-image-container {
         position: relative;
