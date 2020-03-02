@@ -42,6 +42,9 @@
         width: 300px;
         border-radius: 50%;
         overflow: hidden;
+        @include tablet {
+            margin-bottom: 24px;
+        }
     }
     &__item-image {
         @include absolute-transform-centering;
@@ -54,7 +57,7 @@
         color: #514133;
 
         @include tablet {
-            font-size: 18px;
+            font-size: 26px;
         }
         &:hover {
             transition: .3s ease-out;
