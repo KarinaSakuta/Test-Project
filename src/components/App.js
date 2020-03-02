@@ -8,11 +8,23 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import Favicon from 'react-favicon';
+import logoIcon from '../assets/img/cat-icon.png';
 
 export default class App extends Component {
+
+  renderIcon() {
+    return (
+      <div>
+        <Favicon url={logoIcon} />
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="app">
+        {this.renderIcon()}
         <Router>
           <main className="app__main">
             <Switch>
