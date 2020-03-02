@@ -48,5 +48,8 @@
         -webkit-user-select: none;
         user-select: none;
         text-decoration: none;
+        @include tablet {
+            font-size: 20px;
+        }
     }
 }
