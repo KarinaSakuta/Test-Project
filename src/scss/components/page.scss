@@ -11,7 +11,7 @@
         color: #fbfbfb;
         font-size: 20px;
         position: absolute;
-        left: 20px;
+        right: 20px;
         top: 20px;
         &::before {
             content: "↩ ";
@@ -32,10 +32,10 @@
         }
         .page_details & {
             @include desktop {
-                padding-right: 140px;
+                padding-left: 140px;
             }
             @include tablet {
-                padding-right: 140px;
+                padding-left: 140px;
             }
         }
     }
@@ -46,5 +46,8 @@
         text-align: center;
         color: #fbfbfb;
         line-height: 2;
+        @include tablet {
+            font-size: 26px;
+        }
     }
 }
