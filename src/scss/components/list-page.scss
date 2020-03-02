@@ -13,7 +13,7 @@
         border-radius: 30px;
         padding: 20px;
         border: 2px solid transparent;
-        transition: border-color .3s ease-out;
+        transition: all .5s ease-out;
 
         &:not(:first-child) {
             margin-top: 20px;
@@ -22,7 +22,7 @@
             margin-bottom: 20px;
         }
         &:hover {
-            box-shadow: 0 0 15px 1px rgba(0,0,0,.5);
+            box-shadow: 0 0 15px 10px rgba(0,0,0,.5);
         }
     }
     &__item-title {

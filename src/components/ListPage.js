@@ -65,7 +65,7 @@ export default class ListPage extends Component {
             <div className="page">
                 <Header/>
                 <div className="page__content">
-                    <h2 className="page__content-header">Список котиков Каринки</h2>
+                    <h2 className="page__content-header">Список котиков Карины</h2>
                     <div className="list">
                         <ul className="list__container">
                             {this.renderListItems()}

@@ -54,4 +54,3 @@ Menu.propTypes = {
     ).isRequired,
     activeId: PropTypes.number.isRequired,
 };
-

@@ -8,18 +8,22 @@
     }
     &__item-img-container {
         position: relative;
-        height: 150px;
-        width: 150px;
+        height: 130px;
+        width: 130px;
         border-radius: 50%;
         overflow: hidden;
         transition: height .2s ease-out, width .2s ease-out;
         &:hover {
-            height: 160px;
-            width: 160px;
+            height: 145px;
+            width: 145px;
         }
         @include tablet {
             height: 75px;
             width: 75px;
+            &:hover {
+                height: 90px;
+                width: 90px;
+            }
         }
     }
     &__item-img {
